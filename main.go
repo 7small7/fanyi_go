@@ -20,9 +20,9 @@ import (
 // +----------------------------------------------------------------------
 
 func main() {
-	// define command-line parameters
-	translationContentPlatform := flag.String("t", "baidu", "the platform used for translation has optional values of bd (Baidu), tx (Tencent), and al (Alibaba)")
-	translationContent := flag.String("c", "", "the content that needs to be translated")
+	// define command-line parameters.
+	translationContentPlatform := flag.String("t", "baidu", "the platform used for translation has optional values of bd (Baidu), tx (Tencent), and al (Alibaba).")
+	translationContent := flag.String("c", "", "the content that needs to be translated.")
 
 	flag.Parse()
 
@@ -30,7 +30,7 @@ func main() {
 	definePlatform := []string{"bd", "tx", "al"}
 
 	// process command-line parameters. if no platform is set, a platform is set by default.
-	// if it is set, check if the platform supports it
+	// if it is set, check if the platform supports it.
 	if *translationContentPlatform != "" {
 		mapString := mapset.NewSet[string]()
 		for i := 0; i < len(definePlatform); i++ {
@@ -44,13 +44,13 @@ func main() {
 		*translationContentPlatform = definePlatform[0]
 	}
 
-	// verify translation content parameters
+	// verify translation content parameters.
 	if *translationContent == "" {
-		fmt.Println("please enter the content to be translated, or use -- help to view the explanation of command parameters")
+		fmt.Println("please enter the content to be translated, or use -- help to view the explanation of command parameters.")
 		return
 	}
 
-	// after verification, determine the platform used and select the corresponding translation interface based on the platform
+	// after verification, determine the platform used and select the corresponding translation interface based on the platform.
 	if *translationContentPlatform == "bd" {
 		baidu := &driver.BaiDu{}
 		baidu.Input(*translationContent)
