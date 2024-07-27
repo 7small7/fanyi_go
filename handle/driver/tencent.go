@@ -49,7 +49,7 @@ func (receiver *Tencent) trans(content string) (string, error) {
 	}
 	err = clipboard.WriteAll(responseMessage["Response"]["TargetText"].(string))
 	if err != nil {
-		fmt.Println("剪切板操作失败")
+		fmt.Println(err)
 	}
 	return responseMessage["Response"]["TargetText"].(string), err
 }
