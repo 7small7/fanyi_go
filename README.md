@@ -28,6 +28,18 @@ tutu@tutudeMac-mini ~/p/w/t/fanyi_go (main)> go run main.go -h
 
 ** 翻译的结果为自动复制到剪切板中，你可以直接粘贴翻译后的内容。 **
 
+# 效果预览
+
+```shell
+# 中文翻译成英文
+go run main.go -t tx -c "你好呀!我叫Tom,请问你叫什么名字呢" -l zh2en
+Hello! My name is Tom. What's your name, please
+
+# 英文翻译成中文
+go run main.go -t tx -c "Good evening,everyone" -l en2zh
+大家晚上好
+```
+
 # 翻译对照表
 
 1、腾讯翻译对照表。[文档链接地址](https://cloud.tencent.com/document/product/551/15619)

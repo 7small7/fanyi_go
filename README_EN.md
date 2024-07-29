@@ -29,6 +29,18 @@ the platform used for translation has optional values of bd (Baidu), tx (Tencent
 ** The translation result is automatically copied to the clipboard, and you can directly paste the translated content. **
 
 
+# Effect Preview
+
+```shell
+#Translate Chinese into English
+Go run main.go-t tx-c "Hello! My name is Tom, may I ask what your name is? "- l zh2en
+Hello! My name is Tom. What's your name, please
+
+# Translate English into Chinese
+go run main.go -t tx -c "Good evening,everyone" -l en2zh
+Good evening,everyone
+```
+
 # Translation Comparison Table
 
 1. Tencent Translation Comparison Table. [Document link address](https://cloud.tencent.com/document/product/551/15619)
