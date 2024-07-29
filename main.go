@@ -7,5 +7,7 @@ import (
 
 func main() {
 	platform, content, language := cmd.CommandArgs()
-	handle.TxtTrans(platform, content, language)
+	if platform != "" && content != "" && language != "" {
+		handle.TxtTrans(platform, content, language)
+	}
 }
