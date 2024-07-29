@@ -22,9 +22,11 @@ the language of the content to be translated has optional values of en (English)
 -t string
 the platform used for translation has optional values of bd (Baidu), tx (Tencent), and al (Alibaba).  (default "baidu")
 ```
-- The parameter 'c' represents the content that needs to be translated
+- The parameter 'c' represents the content that needs to be translated,How to wrap the content in single or double quotes if it is too long or contains punctuation marks, such as' - c '' What did you have for dinner tonight? ''.
 - The 'l' parameter represents the language in which the content needs to be translated, with optional values of 'en' (English), 'zh' (Chinese), and 'ja' (Japanese). It must follow certain rules, and the content consists of 'current language'+'2'+'target language'. For example, if you want to translate Chinese into English, you can use 'zh2en', where 'zh' represents Chinese and 'en' represents English. The format of each platform may be different, please refer to the platform translation language comparison table at the bottom of the article for details.
 - The t parameter represents the platform used, with optional values of bd (Baidu), tx (Tencent), and al (Alibaba).
+
+** The translation result is automatically copied to the clipboard, and you can directly paste the translated content. **
 
 
 # Translation Comparison Table

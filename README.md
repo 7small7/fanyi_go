@@ -22,10 +22,11 @@ tutu@tutudeMac-mini ~/p/w/t/fanyi_go (main)> go run main.go -h
 -t string
     the platform used for translation has optional values of bd (Baidu), tx (Tencent), and al (Alibaba). (default "baidu")
 ```
-- c 参数表示需要翻译的内容
+- c 参数表示需要翻译的内容，如何内容比较长，或者是包含了标点符号，可以使用单双引号把内容给包起来，例如`-c "你今天晚饭吃的什么呢？"`。
 - l 参数表示需要翻译内容的语言，可选值为 en (English), zh (Chinese), ja (Japanese)，需要遵循一定的规则，内容由`当前语言`+ `2` + `目标语言`组成，例如你要将中文翻译成英文，你可以使用`zh2en`，其中`zh`表示中文，`en`表示英文。每一个平台的格式可能不太一样，具体可以参考文章底部的平台翻译语言对照表。
 - t 参数表示使用的平台，可选值为 bd (Baidu), tx (Tencent), and al (Alibaba)。
 
+** 翻译的结果为自动复制到剪切板中，你可以直接粘贴翻译后的内容。 **
 
 # 翻译对照表
 
