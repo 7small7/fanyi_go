@@ -31,6 +31,6 @@ the platform used for translation has optional values of bd (Baidu), tx (Tencent
 
 # Translation Comparison Table
 
-1. Tencent Translation Comparison Table. [Document link address]（https://cloud.tencent.com/document/product/551/15619)
+1. Tencent Translation Comparison Table. [Document link address](https://cloud.tencent.com/document/product/551/15619)
 
-2. Alibaba Translation Comparison Table. [Document link address]（https://help.aliyun.com/zh/machine-translation/support/supported-languages-and-codes?spm=a2c4g.11186623.0.0.39ef4f6ftcTZOH)
+2. Alibaba Translation Comparison Table. [Document link address](https://help.aliyun.com/zh/machine-translation/support/supported-languages-and-codes?spm=a2c4g.11186623.0.0.39ef4f6ftcTZOH)
