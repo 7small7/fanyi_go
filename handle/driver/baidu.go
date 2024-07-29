@@ -1,7 +1,8 @@
 package driver
 
 type BaiDu struct {
-	Content string
+	Content  string
+	Language string
 }
 
 func (baidu *BaiDu) Output() (string, error) {

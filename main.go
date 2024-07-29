@@ -6,6 +6,6 @@ import (
 )
 
 func main() {
-	platform, content := cmd.CommandArgs()
-	handle.TxtTrans(platform, content)
+	platform, content, language := cmd.CommandArgs()
+	handle.TxtTrans(platform, content, language)
 }

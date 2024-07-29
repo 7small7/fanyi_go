@@ -3,6 +3,8 @@ package driver
 import (
 	"encoding/json"
 	"fmt"
+	"strings"
+
 	"github.com/7samll7/config"
 	"github.com/atotto/clipboard"
 	"github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common"
@@ -12,7 +14,8 @@ import (
 )
 
 type Tencent struct {
-	Content string
+	Content  string
+	Language string
 }
 
 func (receiver *Tencent) Output() (string, error) {
@@ -31,8 +34,13 @@ func (receiver *Tencent) trans(content string) (string, error) {
 
 	request := tmt.NewTextTranslateRequest()
 	request.SourceText = common.StringPtr(content)
-	request.Source = common.StringPtr("zh")
-	request.Target = common.StringPtr("en")
+	sourceLanguage := "zh"
+	targetLanguage := "en"
+	languageType := strings.Split(receiver.Language, "2")
+	sourceLanguage = languageType[0]
+	targetLanguage = languageType[1]
+	request.Source = common.StringPtr(sourceLanguage)
+	request.Target = common.StringPtr(targetLanguage)
 	request.ProjectId = common.Int64Ptr(0)
 
 	response, err := client.TextTranslate(request)
