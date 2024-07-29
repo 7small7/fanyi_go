@@ -1,6 +1,6 @@
 baidu:
-  key: ""
-  secret: ""
+  key: "百度 app key"
+  secret: "百度 app secret"
 tencent:
-  key: ""
-  secret: ""
+  key: "腾讯 app key"
+  secret: "腾讯 app secret"
